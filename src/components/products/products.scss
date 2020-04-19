@@ -1,0 +1,83 @@
+@import '../../UI/styles/styles.scss';
+
+.productsPagination {
+    display: flex;
+    margin-left: 30px;
+    .btnPagination {
+        margin-left: 10px;
+        font-size: 20px;
+        border: 2px solid $blue;
+        border-radius: 4px;
+        width: 35px;
+        line-height: 35px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: bold;
+        transition: .1s;
+        &:hover {
+            background-color: $blue;
+            border-color: $blue;
+            color: $white;
+            box-shadow: $boxShadowHover;
+            transform: scale(1.2);
+            transition: .1s;
+        }
+    }
+    .active {
+        background-color: $red;
+        border-color: $red;
+        color: $white;
+        box-shadow: $boxShadowHover;
+        transform: scale(1.2);
+        transition: .1s;
+    }
+}
+
+.productsBox {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em;
+    margin-top: 30px;
+    .productsBox {
+        position: relative;
+        width: 300px;
+        height: 500px;
+        box-shadow: $boxShadowHover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .productPrice {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+};
+
+
+.boxButton {
+    &:hover {
+        .productButton {
+            transform: scale(1.2);
+            background-color: $red;
+            color: $white;
+            transition: .3s;
+        }
+    }
+}
+
+.productButton {
+    background: $blue;
+    outline: none;
+    width: 100px;
+    height: 40px;
+    color: $white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
+}

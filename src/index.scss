@@ -1,0 +1,18 @@
+@import './UI/styles/styles.scss';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+#root {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: $boxShadowHover;
+    z-index: 1;
+    background: $white
+}
